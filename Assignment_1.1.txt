@@ -1,0 +1,23 @@
+1. Say True or False for the below statements: 
+
+• Prescriptive Analytics used to predict the future outcomes? 		
+Answer: False
+
+• Base R packages installed automatically? 	
+Answer: True
+
+2. What is Recycling of elements in a vector? 
+Answer: Recycling occurs when vector arithmetic is performed on multiple vectors of different sizes. R takes shorter vector and repeats them until it becomes long enough to match the longer one.
+
+
+3. Give an example of recycling of elements.
+> x=c(1, 2, 3, 4, 5, 6) + c(1, 3)
+> x
+
+Answer:
+[1] 2 5 4 7 6 9
+
+Internally c(1, 3) vector repeat itself to form c(1, 3, 1, 3, 1, 3) to match the previous term.
+c(1, 2, 3, 4, 5, 6) + c(1, 3, 1, 3, 1, 3)
+1+1, 2+3, 3+1, 4+3, 5+1, 6+3 
+2  5  4  7  6  9
